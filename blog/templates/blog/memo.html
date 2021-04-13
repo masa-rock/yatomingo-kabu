@@ -1,0 +1,30 @@
+{% extends "blog/base.html" %}
+
+{% block main %}
+<h2 class="text-center pb-4">弥富式株式投資_トップページ</h2>
+
+<div class="card-deck">
+  <div class="card">
+    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+    <div class="card-body">
+      <a class="card-title text-center" href="{% url 'memo' %}">株メモ</a>
+      <p class="card-text">Todoリストです。</p>
+    </div>
+  </div>
+  <div class="card">
+    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+    <div class="card-body">
+      <a class="card-title text-center" href="{% url 'simu' %}">過去シミュレーション</a>
+      <p class="card-text">過去の指標を、プログラムに従って分析します。</p>
+    </div>
+  </div>
+  <div class="card">
+    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+    <div class="card-body">
+      <h5 class="card-title">リアルタイムシミュレーション</h5>
+      <p class="card-text">ファンダメンタルで絞った銘柄に対して、リアルタイムでプログラミングするページです。</p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

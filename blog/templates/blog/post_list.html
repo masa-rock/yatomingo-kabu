@@ -1,0 +1,13 @@
+{% extends "blog/base.html" %}
+{% block main %}
+<h2>記事一覧</h2>
+<ol>
+    {% for post in object_list %}
+    <!-- urlsの'detail'というnameを持つpathにpost.idを渡しますよという意味 -->
+    <!-- これにより、<pk>にpost.idが渡される -->
+    <li><a href="{%url 'detail' post.id%}">{{ post.title }}</a></li>
+    {% endfor %}
+</ol>
+<!-- createのnameを持つ(新規投稿ページ)へのパスを自動的に生成 -->
+<p><a href="{% url 'create' %}">新規投稿</a></p>
+{% endblock %}
